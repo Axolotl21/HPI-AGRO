@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+:root{
+    --background: #ffffff;
+    --primary-color: #FFC700;
+    --secondary-color: #8FC600;
+    --third-color: #C5DA00;
+    --font-color: #19282F;
+}
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Klee One', cursive;
+}
+
+body { background-color: var(--background);}
+
+.center { margin: 15px 5%;}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--secondary-color);
+    padding: 5px;
+}
+
+#logo {
+    max-height: 75px;
+    cursor: pointer;
+}
+
+.nav__links {
+    list-style-type: none;
+    padding-top: 25px;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+.nav__links a:not(.career)::after {
+    display:block;
+    content: '';
+    border-bottom: 3px solid var(--secondary-color);  
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.nav__links a:not(.career):hover { color: var(--secondary-color);}
+
+.nav__links a:not(.career):hover:after { transform: scaleX(1);}
+
+.nav__links .career {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px;
+    transition: width 0.5s ease-in;
+}
+
+.active { color: var(--secondary-color) !important;}
+
+.motto {
+    font-size: 6rem;
+    position: relative;
+}
+
+.motto:first-child{ color: var(--secondary-color);}
+
+.motto:first-child::after {
+    content: url(/asset/images/component1.png);
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+.motto:last-of-type{ color: var(--primary-color);}
+
+.first-image { max-width: 500px; border-radius: 10px;}
+
+.second-image {
+    max-width: 500px;
+    position: relative;
+    bottom: 275px;
+    left: 50px;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10%;
+}
+
+.company-detail {
+    font-size: 1.25rem;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.number { text-align: center;}
+
+.number p:first-child {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.third-image { max-width: 650px; border: 5px solid var(--primary-color); }
+
+.fourth-image { 
+    max-width: 400px; 
+    border: 10px solid var(--primary-color); 
+    position: relative;
+    top: -40px;
+}
+
+.fifth-image {
+    max-width: 300px;
+    border: 10px solid var(--primary-color);
+    position: relative;
+    top: -185px;
+}
+
+.motto-2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-style: oblique;
+    margin: 10px;
+}
+
+.scroll {
+    color: var(--primary-color);
+    font-size: 5rem;
+    writing-mode: vertical-rl;
+    margin: 30px 75px;
+}
+
+.scroll::after {
+    content: url(/asset/images/arrow-down.png);
+    margin-top: 40px;
+}
+
+.border {
+    border-top: 5px solid var(--secondary-color);
+    padding-top: 40px;
+    border-right: 5px solid var(--primary-color);
+    border-bottom: 5px solid var(--primary-color);
+}
+
+.job {
+    border-right: 5px solid var(--primary-color);
+    padding: 30px;
+}
+
+.job-desc { color: var(--secondary-color);}
+
+.job-motto {font-size: 2.5rem;}
+
+.job-motto span {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2px 5px;
+}
+
+.job-desc p:last-of-type{
+    font-size: 1.5rem;
+    margin: 30px 0px;
+}
+
+.job-link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.job-link span {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.job-link a {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.sixth-image {
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.media { margin: 30px 0px;}
+
+.media-head span{
+    color: var(--font-color);
+    font-size: 1.5rem;
+}
+
+.media-head a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-left: 40px;
+}
+
+.date {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px;
+}
+
+.news {
+    display: block;
+    background-color: #EEE;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.news:hover .content-title { color: var(--secondary-color);}
+
+figcaption {
+    font-size: 0.75rem;
+}
+
+.detail-news p {
+    margin: 20px 0px;
+}
+
+.content {
+    padding: 10px 15px;
+}
+
+.content-title {
+    font-size: 1.25rem;
+}
+
+.small-section {
+    background-color: var(--third-color);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px;
+}
+
+.small-section form {margin: 25px 0px;}
+
+.small-section input {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    padding: 5px;
+    width: 450px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.small-section input::placeholder {color: white;}
+
+.small-section input:focus {outline: none;}
+
+.small-section button {
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 75px
+}
+
+footer {
+    padding: 45px 0px;
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {margin-bottom: 10px;}
+
+footer a {
+    font-size: 1.25rem;
+    color: white;
+    margin-right: 20px;
+}
+
+/*contact.html*/
+
+.page-section img {
+    max-width: 100%;
+}
+
+.contact-section, .media-section, .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.contact-section h1, .about-section h1{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.section-line {
+    width: 90px;
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+
+.contact-form form div{
+    font-size: 1.5rem;
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.contact-form form > span {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.required {
+    color: var(--primary-color);
+}
+
+.form-input {
+    width: 50%;
+    height: auto;
+    padding: 3px 8px;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    border: 2px solid var(--font-color);
+}
+
+.button-collection {
+    width: 50%;
+}
+
+.form-button {
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.form-button:hover, .small-section form button:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.contact-info img {
+    width: 200px;
+    margin: 20px;
+}
+
+.contact-info p{
+    color: var(--secondary-color);
+}
+
+.seventh-image {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.seventh-image::before {
+    content: "halo bitch";
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: 400px;
+}
+
+.history h2{
+    color: var(--third-color)
+}
+
+.history p {
+    margin-top: 10px;
+}
+
+.company-core {
+    margin-top: 40px;
+}
+
+.company-core h2{
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.philosopy, .vision, .mission {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 40px;
+}
+
+.philosopy-item {
+    position: relative;
+    background-color: var(--secondary-color);
+    color: white;
+    list-style-position: inside;
+    height: 200px;
+    padding: 20px;
+    left: 15%;
+    top: 25%;
+    border-radius: 10px;
+}
+
+.vision-item {
+    position: relative;
+    background-color: var(--third-color);
+    color: white;
+    list-style-position: inside;
+    height: 150px;
+    padding: 20px;
+    right: 10%;
+    top: 25%;
+    border-radius: 10px;
+}
+
+.core-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.mission-item {
+    position: relative;
+    background-color: var(--primary-color);
+    color: white;
+    list-style-position: inside;
+    height: 120px;
+    padding: 20px;
+    left: 10%;
+    top: 40%;
+    border-radius: 10px;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+::selection{
+    background-color: var(--primary-color);
+    color: white;
+}
