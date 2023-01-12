@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="js/scripts.js"></script>
     <title>HPI-Agro | Home</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="media.html">Media</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a class="career" href="">Career</a></li>
+                <li><a class="career" href="career.html">Career</a></li>
             </ul>
         </nav>
     </header>
@@ -35,24 +36,24 @@
                     <p>HPI Agro is a national private business company currently growing rapidly, particularly for oil palm plantations.</p>
                     <div class="grid">
                         <div class="number">
-                            <p>27 K</p>
+                            <p class="number-number" data-val="27">0</p>
                             <p>Employees working in HPI Agro</p>
                         </div>
                         <div class="number">
-                            <p>30</p>
+                            <p class="number-number" data-val="30">0</p>
                             <p>Total plantation estate</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <img class="first-image" src="asset/images/farmer.jpg" alt="farmer">
+                <img class="first-image" src="asset/images/farmer.jpg" alt="farmer" class="hidden">
                 <img class="second-image" src="asset/images/farmer.jpg" alt="blurry farmer" >
             </div>
         </section>
         <section class="grid border">
             <div>
-                <img class="third-image" src="/asset/images/orangutan.jpg" alt="">
+                <img class="third-image" src="/asset/images/orangutan.jpg" alt="orang utan on tree">
                 <img class="fourth-image" src="/asset/images/palm1.jpg" alt="">
                 <img class="fifth-image" src="/asset/images/palm2.jpg" alt="">
             </div>
@@ -70,7 +71,7 @@
                     other company policies.
                 </p>
                 <div class="job-link">
-                    <div><a href="#"><span class="material-symbols-outlined">business_center</span>Experience Program</a></div>
+                    <div><a href="career.html"><span class="material-symbols-outlined">business_center</span>Experience Program</a></div>
                     <div><a href="#"><span class="material-symbols-outlined">school</span>Intership Program</a></div>
                 </div>
             </div>
@@ -80,7 +81,7 @@
         </section>
         <section class="media">
             <div class="media-head"><span>HPI-AGRO Media</span> <a href="media.html">See All</a></div>
-            <a href="media/HPI-Agro-held-a-social-service-in-the-village-of-Mungguk-Kelapa.html" target="_self" class="news">
+            <a href="media/HPI-Agro-held-a-social-service-in-the-village-of-Mungguk-Kelapa.html" target="_self" class="news animation">
                 <div class="date">26 September 2022</div>
                 <div class="content">
                     <p class="content-title">HPI Agro held a social service in the village of Mungguk Kelapa</p>
@@ -89,7 +90,7 @@
                         Ketungau Hilir District, Sintang Regency.</p>
                 </div>
             </a>
-            <a href="media/HPI-Agro-held-a-ceremony-for-the-77th-Indonesian-Independence-Day-at-the-Factory-location.html" target="_self" class="news">
+            <a href="media/HPI-Agro-held-a-ceremony-for-the-77th-Indonesian-Independence-Day-at-the-Factory-location.html" target="_self" class="news animation">
                 <div class="date">18 August 2022</div>
                 <div class="content">
                     <p class="content-title">HPI Agro held a ceremony for the 77th Indonesian Independence Day
@@ -100,7 +101,7 @@
                         held a flag ceremony in commemoration of the 77th Anniversary of the Independence of the Republic of Indonesia.</p>
                 </div>
             </a>
-            <a href="media/Two-HPI-Agro-Companies-Win-Certificates-of-Appreciation-from-the-Governor-of-West-Kalimantan.html" target="_self" class="news"> 
+            <a href="media/Two-HPI-Agro-Companies-Win-Certificates-of-Appreciation-from-the-Governor-of-West-Kalimantan.html" target="_self" class="news animation"> 
                 <div class="date">30 January 2022</div>
                 <div class="content">
                     <p class="content-title">Two HPI Agro Companies Win Certificates of Appreciation from the Governor of West Kalimantan</p>
@@ -120,11 +121,13 @@
         </form>
     </section>
     <footer>
-        <span>&copy; PT HPI-AGRO TBK 2022</span>
-        <div>
-            <a href="#" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/hpiagro/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://id.linkedin.com/company/hpiagro" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="social-media animation">
+            <span>&copy; PT HPI-AGRO TBK 2022</span>
+            <div>
+                <a href="#" target="_blank" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/hpiagro/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://id.linkedin.com/company/hpiagro" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
 </body>
